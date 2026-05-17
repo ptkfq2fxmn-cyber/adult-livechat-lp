@@ -1,229 +1,52 @@
 :root {
-  --bg: #070b14;
-  --card: #0f1726;
-  --text: #f5f7fb;
-  --muted: #b4bfd3;
-  --gold: #d4af37;
-  --gold-dark: #b8952f;
-  --line: #27324a;
-  --notice-bg: #1a2235;
+  --bg: #fffafc;
+  --card: #ffffff;
+  --text: #2b2331;
+  --muted: #6f6378;
+  --pink: #f9dce8;
+  --purple: #efe5ff;
+  --blue: #e5f4ff;
+  --line: #e8dceb;
+  --accent: #b67895;
+  --accent-strong: #9b4f73;
 }
 
-* {
-  box-sizing: border-box;
-}
-
+* { box-sizing: border-box; }
 body {
   margin: 0;
-  padding-bottom: 92px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
   color: var(--text);
-  background: linear-gradient(180deg, #05080f 0%, #0a1020 40%, #070b14 100%);
+  background: linear-gradient(180deg, var(--pink) 0%, var(--purple) 40%, var(--blue) 100%);
   line-height: 1.7;
 }
 
-main,
-.hero,
-.cta,
-.footer {
-  width: min(100%, 720px);
-  margin: 0 auto;
-  padding: 0 16px;
-}
-
-.hero {
-  padding-top: 24px;
-  padding-bottom: 10px;
-}
-
-.pr-tag,
-.age-warning {
-  margin: 0 0 8px;
-  font-size: 0.82rem;
-  color: var(--muted);
-}
-
-.notice-emphasis {
-  margin: 0 0 12px;
-  font-size: 0.87rem;
-  color: #f3dd99;
-  background: var(--notice-bg);
-  border: 1px solid #3f4c67;
-  border-radius: 8px;
-  padding: 8px 10px;
-}
-
-.notice-text {
-  margin-top: 10px;
-  padding: 10px;
-  border-radius: 10px;
-  border: 1px solid #3d4b68;
-  background: #10192a;
-}
-
-h1,
-h2,
-h3 {
-  line-height: 1.4;
-  margin-top: 0;
-}
-
-h1 { font-size: 1.6rem; margin-bottom: 10px; }
-h2 { font-size: 1.25rem; margin-bottom: 10px; }
-h3 { font-size: 1.1rem; margin-bottom: 8px; }
-
-p { margin-top: 0; }
-
-.lead {
-  font-size: 1rem;
-  color: #e7ebf7;
-}
-
-.card {
-  background: rgba(15, 23, 38, 0.95);
-  border: 1px solid var(--line);
-  border-radius: 14px;
-  padding: 16px;
-  margin: 14px auto;
-}
-
-.sub {
-  color: var(--muted);
-  font-size: 0.95rem;
-}
-
-.btn {
-  display: inline-block;
-  width: 100%;
-  text-align: center;
-  text-decoration: none;
-  border: 0;
-  border-radius: 12px;
-  padding: 14px 16px;
-  font-size: 1rem;
-  font-weight: 700;
-  cursor: pointer;
-}
-
-.btn-primary {
-  background: linear-gradient(180deg, #e1bd4a, var(--gold));
-  color: #1b1405;
-}
-
-.btn-primary:active,
-.btn-primary:hover {
-  background: linear-gradient(180deg, #edca5a, var(--gold-dark));
-}
-
-.quiz-options {
-  display: grid;
-  gap: 10px;
-}
-
-.quiz-btn {
-  background: #111b2d;
-  color: var(--text);
-  border: 1px solid #33405b;
-}
-
-.quiz-result {
-  margin-top: 12px;
-  padding: 12px;
-  border-radius: 10px;
-  border: 1px solid #3d4b68;
-  background: #10192a;
-}
-
-.table-wrap {
-  overflow-x: auto;
-}
-
-table {
-  width: 100%;
-  min-width: 560px;
-  border-collapse: collapse;
-}
-
-th,
-td {
-  border: 1px solid #36425c;
-  padding: 10px;
-  text-align: left;
-  vertical-align: top;
-}
-
-th {
-  background: #17233a;
-}
-
-ul {
-  padding-left: 20px;
-  margin: 8px 0 0;
-}
-
-details {
-  border: 1px solid #34415d;
-  border-radius: 8px;
-  padding: 10px;
-  background: #101a2d;
-  margin-bottom: 10px;
-}
-
-summary {
-  cursor: pointer;
-  font-weight: 600;
-}
-
-.cta-buttons {
-  display: grid;
-  gap: 10px;
-}
-
-.footer {
-  margin-bottom: 32px;
-}
-
-
-.table-hint {
-  margin: 0 0 8px;
-  font-size: 0.82rem;
-  color: var(--muted);
-}
-
-.fixed-cta {
-  position: fixed;
-  left: 50%;
-  bottom: calc(12px + env(safe-area-inset-bottom));
-  transform: translateX(-50%);
-  width: min(calc(100% - 24px), 688px);
-  z-index: 999;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 12px;
-  padding: 14px 16px;
-  font-size: 1rem;
-  font-weight: 700;
-  color: #1b1405;
-  background: linear-gradient(180deg, #e1bd4a, var(--gold));
-  border: 1px solid #d5b13a;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
-}
-
-.fixed-cta:active,
-.fixed-cta:hover {
-  background: linear-gradient(180deg, #edca5a, var(--gold-dark));
-}
-
-@media (min-width: 769px) {
-  .table-hint {
-    display: none;
-  }
-
-  .fixed-cta {
-    display: none;
-  }
-
-  body {
-    padding-bottom: 0;
-  }
-}
+main, .hero, .cta, .footer { width: min(100%, 720px); margin: 0 auto; padding: 0 16px; }
+.hero { padding-top: 24px; padding-bottom: 10px; }
+.pr-tag, .age-warning { margin: 0 0 8px; font-size: .82rem; color: var(--muted); }
+.notice-emphasis { margin: 0 0 12px; font-size: .87rem; color: #6d3150; background: #ffeef5; border: 1px solid #edc7d8; border-radius: 8px; padding: 8px 10px; }
+.notice-text { margin-top: 10px; padding: 10px; border-radius: 10px; border: 1px solid #e6d3eb; background: #fff6fb; }
+h1,h2,h3 { line-height: 1.4; margin-top: 0; }
+h1 { font-size: 1.6rem; }
+h2 { font-size: 1.25rem; }
+h3 { font-size: 1.08rem; }
+.lead { color: #4f4158; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 16px; margin: 14px auto; box-shadow: 0 8px 24px rgba(140, 89, 131, 0.08); }
+.sub, .table-hint { color: var(--muted); font-size: .92rem; }
+.btn { display:inline-block; width:100%; text-align:center; text-decoration:none; border:0; border-radius:12px; padding:14px 16px; font-size:1rem; font-weight:700; cursor:pointer; }
+.btn-primary { background: linear-gradient(180deg, #d692b3, var(--accent)); color: #fff; }
+.btn-primary:hover,.btn-primary:active { background: linear-gradient(180deg, #c980a4, var(--accent-strong)); }
+.quiz-options,.cta-buttons { display:grid; gap:10px; }
+.quiz-btn { background:#fff; color:var(--text); border:1px solid #dfc8e3; }
+.quiz-result { margin-top: 12px; padding: 12px; border-radius: 10px; border:1px solid #e1d1e6; background: #fff7fb; }
+.service-spotlight { padding: 12px; border:1px dashed #dcb8cb; border-radius:10px; background:#fffdfd; }
+.table-wrap { overflow-x: auto; }
+table { width:100%; min-width:560px; border-collapse:collapse; }
+th,td { border:1px solid #e3d5e8; padding:10px; text-align:left; vertical-align:top; }
+th { background:#f7edfb; }
+details { border:1px solid #e3d8ea; border-radius:8px; padding:10px; background:#fff; margin-bottom: 10px; }
+.fanza-image-frame { margin: 12px 0; border:1px dashed #ceb7d7; background: linear-gradient(180deg, #fff, #f6f7ff); border-radius:12px; padding:10px; }
+.fanza-image-frame img { width:100%; display:block; border-radius:8px; }
+.fanza-fallback { display:none; background:#ffffff; border:1px solid #e4d2ea; border-radius:10px; padding:12px; }
+.fanza-fallback h4 { margin:0 0 8px; font-size:1rem; }
+.fanza-fallback p { margin:0; color:#4f4158; font-size:.95rem; }
+#OnlinegirlMovieJewel,#OnlinegirlMovieMadam { margin: 10px 0; }
