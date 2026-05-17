@@ -47,8 +47,19 @@
           <button class="btn quiz-btn" data-type="madam">人妻・熟女・大人女性が好き</button>
           <button class="btn quiz-btn" data-type="fanza">大手・知名度・安心感を重視</button>
         </div>
+      </section>
+
+      <section class="card" id="result-card">
+        <h2>診断結果</h2>
         <div id="quiz-result" class="quiz-result" aria-live="polite">
           <p>選択すると、おすすめサービスを表示します。</p>
+        </div>
+      </section>
+
+      <section class="card" id="featured-service">
+        <h2>あなたへのおすすめ</h2>
+        <div id="service-spotlight" class="service-spotlight" aria-live="polite">
+          <p>診断後に、該当サービスの詳しい案内をここに表示します。</p>
         </div>
       </section>
 
@@ -86,29 +97,38 @@
       </section>
 
       <section class="card" id="services">
-        <h2>各サービスの紹介</h2>
+        <h2>全サービス紹介</h2>
 
         <article class="service-item" id="jewel">
-          <h3>ジュエルライブ</h3>
-          <p>
-            若い大人女性・清楚系・OL系の配信者を中心に探したい方に向いています。初めてでも選びやすい構成で、気軽に試しやすいのが魅力です。
-          </p>
+          <h3>ジュエルライブ｜今ライブ中の女性をチェック</h3>
+          <p>若い大人女性・清楚系・OL系の配信者を中心に探したい方に向いています。</p>
+          <div id="OnlinegirlMovieJewel" data-head="yes" data-movie="yes" data-insert="yes" data-view="5" data-width="250" data-code="MLA5685">
+            <link rel="stylesheet" href="https://hananokai.tv/mlive/mlive.sp.onlinegirl-movie.stylesheet.php?id=OnlinegirlMovieJewel">
+            <script type="text/javascript" charset="UTF-8" src="https://hananokai.tv/mlive/mlive.sp.onlinegirl-movie.javascript2.php?site=jewel&id=OnlinegirlMovieJewel&code=MLA5685&more=yes&head=yes&view=5&seika=10000&taiki=1&normal=1&two=1" async defer></script>
+          </div>
           <a class="btn btn-primary service-link" data-service="jewel" href="#">ジュエルライブ公式を見る</a>
         </article>
 
         <article class="service-item" id="madam">
-          <h3>マダムライブ</h3>
-          <p>
-            人妻・熟女・大人女性ジャンルを重視したい方におすすめ。落ち着いた雰囲気で、じっくり会話を楽しみたい人に適しています。
-          </p>
+          <h3>マダムライブ｜今ライブ中の女性をチェック</h3>
+          <p>人妻・熟女・大人女性ジャンルを重視したい方におすすめです。</p>
+          <div id="OnlinegirlMovieMadam" data-head="yes" data-movie="yes" data-insert="yes" data-view="5" data-width="250" data-code="MLA5685">
+            <link rel="stylesheet" href="https://hananokai.tv/mlive/mlive.sp.onlinegirl-movie.stylesheet.php?id=OnlinegirlMovieMadam">
+            <script type="text/javascript" charset="UTF-8" src="https://hananokai.tv/mlive/mlive.sp.onlinegirl-movie.javascript2.php?site=madam&id=OnlinegirlMovieMadam&code=MLA5685&more=yes&head=yes&view=5&seika=10000&taiki=1&normal=1&two=1" async defer></script>
+          </div>
           <a class="btn btn-primary service-link" data-service="madam" href="#">マダムライブ公式を見る</a>
         </article>
 
         <article class="service-item" id="fanza">
-          <h3>FANZAライブチャット</h3>
-          <p>
-            大手サービスの知名度や安心感を重視する方向け。まずは定番サービスから比較したい初心者にも使いやすい選択肢です。
-          </p>
+          <h3>FANZAライブチャット｜大手の安心感で選びたい人向け</h3>
+          <p>大手ライブチャットを確認したい方や、初心者にも選びやすいサービスを探している方に向いた選択肢です。</p>
+          <div class="fanza-image-frame" id="fanza-image-frame">
+            <div class="fanza-fallback" id="fanza-fallback">
+              <h4>FANZAライブチャット</h4>
+              <p>大手サービスの安心感を重視したい人向け。まずは定番のライブチャットから比較したい初心者にも選びやすいサービスです。</p>
+            </div>
+            <img id="fanza-card-image" src="fanza-card.png.PNG" alt="FANZAライブチャットの案内画像" />
+          </div>
           <a class="btn btn-primary service-link" data-service="fanza" href="#">FANZAライブチャット公式を見る</a>
         </article>
       </section>
@@ -125,16 +145,24 @@
       <section class="card" id="faq">
         <h2>初心者向けQ&amp;A</h2>
         <details>
-          <summary>Q. ライブチャットは初めてでも使えますか？</summary>
-          <p>A. はい。初心者向けガイドやカテゴリ分けがあるサービスを選べば、無理なく始めやすいです。</p>
+          <summary>Q. ライブチャットは出会い系ですか？</summary>
+          <p>A. いいえ。実際に会うことを目的としたサービスではなく、画面越しにリアルタイムで会話やコミュニケーションを楽しむサービスです。</p>
         </details>
         <details>
-          <summary>Q. スマホだけでも利用できますか？</summary>
-          <p>A. 多くのサービスはスマホに対応しています。通信環境の安定した場所での利用がおすすめです。</p>
+          <summary>Q. 無料登録だけでもできますか？</summary>
+          <p>A. 登録自体は無料のサービスが多いですが、実際に楽しむにはポイント購入が必要になる場合があります。</p>
         </details>
         <details>
-          <summary>Q. どれを選べばいいか迷います。</summary>
-          <p>A. 本ページ上部の診断結果を目安に、好みや重視ポイントに合うサービスから試してみてください。</p>
+          <summary>Q. スマホだけで使えますか？</summary>
+          <p>A. 多くのライブチャットはスマホから利用できます。通信環境の安定した場所での利用がおすすめです。</p>
+        </details>
+        <details>
+          <summary>Q. 料金は高いですか？</summary>
+          <p>A. 使い方によって変わります。事前にポイント消費や料金体系を確認し、予算を決めて使うのがおすすめです。</p>
+        </details>
+        <details>
+          <summary>Q. どれを選べばいいですか？</summary>
+          <p>A. 若い大人女性・清楚系・OL系が好きならジュエルライブ、人妻・熟女・大人女性が好きならマダムライブ、大手の安心感を重視するならFANZAライブチャットが分かりやすいです。</p>
         </details>
       </section>
     </main>
@@ -153,15 +181,7 @@
       <p class="pr-tag">PR（アフィリエイト広告を含みます）</p>
       <p class="age-warning">※18歳未満の方は利用できません。</p>
       <p class="notice-emphasis">※本サービスは出会いを目的としたサービスではありません。</p>
-      <p>
-        ライブチャットは実際に会うことを目的とした出会い系サービスではありません。画面越しにリアルタイムでコミュニケーションを楽しむサービスです。
-      </p>
-      <p>
-        掲載情報は作成時点の内容であり、最新情報は各公式サイトをご確認ください。サービスの利用可否・料金・提供内容は変更される場合があります。最終的な判断は必ず公式情報をご確認のうえ、ご自身の責任でご利用ください。
-      </p>
     </footer>
-
-    <a href="#links" class="fixed-cta">自分に合うサービスを確認する</a>
 
     <script src="script.js"></script>
   </body>
